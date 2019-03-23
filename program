@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int t;
+    char s[10000];
+    scanf("%d",&t);
+
+    
+
+    if(t>=1 && t<=10)
+    {
+        while(t--)
+        {
+          scanf(" %[^\n]s", &s);
+          if(strlen(s)>=2 && strlen(s)<=10000)
+          {
+          for (int i = 0; i < strlen(s); i++) {
+            if (i % 2 == 0) {
+              printf("%c",s[i]);
+          }
+        }
+        printf(" ");
+        for (int i = 0; i < strlen(s);i++)
+         {
+           if (i % 2 == 1)
+            {
+             printf("%c", s[i]);
+            }
+         }
+         printf("\n");
+        }
+        }
+    }
+
+    
+}
